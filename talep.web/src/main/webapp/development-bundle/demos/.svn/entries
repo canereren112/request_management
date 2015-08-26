@@ -1,0 +1,221 @@
+10
+
+dir
+0
+http://192.168.2.5:81/repos/trunk/XMode/radiomode.collector/src/main/webapp/development-bundle/demos
+http://192.168.2.5:81/repos
+add
+
+
+
+
+
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+6ba95133-2200-0e43-9c83-9f10a3f056df
+
+accordion
+dir
+
+
+
+add
+
+addClass
+dir
+
+
+
+add
+
+animate
+dir
+
+
+
+add
+
+datepicker
+dir
+
+
+
+add
+
+demos.css
+file
+
+
+
+add
+
+2e2ec04700af4ac5681a956cfe405c47
+
+
+
+
+
+
+
+
+
+
+
+copied
+http://192.168.2.5:81/repos/trunk/XMode/radiomode.web/src/main/webapp/development-bundle/demos/demos.css
+865
+
+dialog
+dir
+
+
+
+add
+
+draggable
+dir
+
+
+
+add
+
+droppable
+dir
+
+
+
+add
+
+effect
+dir
+
+
+
+add
+
+hide
+dir
+
+
+
+add
+
+images
+dir
+
+
+
+add
+
+index.html
+file
+
+
+
+add
+
+b05060c40fd9dd154b0fe017c1c10085
+
+
+
+
+
+
+
+
+
+
+
+copied
+http://192.168.2.5:81/repos/trunk/XMode/radiomode.web/src/main/webapp/development-bundle/demos/index.html
+865
+
+progressbar
+dir
+
+
+
+add
+
+removeClass
+dir
+
+
+
+add
+
+resizable
+dir
+
+
+
+add
+
+selectable
+dir
+
+
+
+add
+
+show
+dir
+
+
+
+add
+
+slider
+dir
+
+
+
+add
+
+sortable
+dir
+
+
+
+add
+
+switchClass
+dir
+
+
+
+add
+
+tabs
+dir
+
+
+
+add
+
+toggle
+dir
+
+
+
+add
+
+toggleClass
+dir
+
+
+
+add
+

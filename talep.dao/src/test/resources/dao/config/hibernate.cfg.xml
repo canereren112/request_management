@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+    <!-- Baglanti degiskenleri -->
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://192.168.2.5:3306/test_radiomode</property>
+        <property name="hibernate.connection.username">radiomode</property>
+        <property name="hibernate.connection.password">radiom47</property>
+    <!-- Baglanti degiskenleri -->
+    <!-- Ekstra ayarlar -->
+        <property name="hibernate.dialect">org.hibernate.dialect.SQLServerDialect</property>
+        <property name="cache.provider_class">org.hibernate.cache.NoCacheProvider</property>
+        <property name="hibernate.transaction.factory_class">org.springframework.orm.hibernate3.SpringTransactionFactory</property>
+    <!--<property name="hibernate.transaction.factory_class">org.hibernate.transaction.JDBCTransactionFactory</property>-->
+        <property name="hibernate.current_session_context_class">thread</property>
+        <property name="hibernate.jdbc.use_get_generated_keys">true</property>
+        <property name="hibernate.show_sql">false</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        
+        <property name="hibernate.connection.zeroDateTimeBehavior">convertToNull</property>
+    <!--
+        <property name="hibernate.bytecode.use_reflection_optimizer">false</property>
+        -->
+    <!-- Ekstra ayarlar -->
+    <!-- Pojo Siniflari -->
+        <mapping class="com.eren.bitirme.domain.Accounts"/>
+        <mapping class="com.eren.bitirme.domain.Adres"/>
+        <mapping class="com.eren.bitirme.domain.BasketProducts"/>
+        <mapping class="com.eren.bitirme.domain.Comments"/>
+        <mapping class="com.eren.bitirme.domain.Images"/>
+        <mapping class="com.eren.bitirme.domain.Links"/>
+        <mapping class="com.eren.bitirme.domain.Members"/>
+        <mapping class="com.eren.bitirme.domain.MemberLog"/>
+        <mapping class="com.eren.bitirme.domain.MemberLogCount"/>
+        <mapping class="com.eren.bitirme.domain.MemberPreference"/>
+        <mapping class="com.eren.bitirme.domain.MemberProductRecommendation"/>
+        <mapping class="com.eren.bitirme.domain.MemberProductResult"/>
+        <mapping class="com.eren.bitirme.domain.News"/>
+        <mapping class="com.eren.bitirme.domain.OrderedProducts"/>
+        <mapping class="com.eren.bitirme.domain.Orders"/>
+        <mapping class="com.eren.bitirme.domain.PollChoices"/>
+        <mapping class="com.eren.bitirme.domain.Polls"/>
+        <mapping class="com.eren.bitirme.domain.ProductCategories"/>
+        <mapping class="com.eren.bitirme.domain.ProductProporty"/>
+        <mapping class="com.eren.bitirme.domain.Products"/>
+        <mapping class="com.eren.bitirme.domain.ProductKeywords"/>
+        <mapping class="com.eren.bitirme.domain.ProductFoundKeywords"/>
+        <mapping class="com.eren.bitirme.domain.ProductRecommendation"/>
+        <mapping class="com.eren.bitirme.domain.ProductAssocation"/>
+        <mapping class="com.eren.bitirme.domain.Ratings"/>
+        <mapping class="com.eren.bitirme.domain.Roles"/>
+    <!-- Pojo Siniflari -->
+    </session-factory>
+</hibernate-configuration>

@@ -1,0 +1,122 @@
+/* 
+    Document   : hepsiniListele
+    Created on : 12.Şub.2012, 21:33:37
+    Author     : caner
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+.listele_headers{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.listele_headers a{
+    text-decoration: underline;
+    position: absolute;
+}
+
+.sıra_no_liste_headers{
+    margin-left: 10px;
+}
+
+.talep_adi_liste_headers{
+    margin-left: 72px;
+}
+.referans_adi_liste_headers{
+    margin-left: 211px;
+}
+.son_yapilan_islem_liste_headers{
+    margin-left: 372px;
+}
+.talep_turu_liste_headers{
+    margin-left: 602px;
+}
+.guncelleme_tarihi_liste_headers{
+    margin-left: 700px;
+}
+.hepsini_listele_list{
+    margin-top: 32px;
+
+}
+
+.hepsini_listele_list span{
+    position: absolute;
+}
+.hepsini_listele_list li{
+    height: 18px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.hepsini_listele_list li:hover{
+    background-color: #D8EFF8;
+}
+
+.sıra_no_liste_span{
+    margin-left: 10px;
+    text-align: center;
+    width: 27px;
+}
+.talep_adi_liste_span{
+    margin-left: 72px;
+    text-align: center;
+    width: 110px;
+
+}
+.referans_adi_liste_span{
+    margin-left: 211px;
+    text-align: center;
+    width: 138px;
+
+}
+.son_yapilan_islem_liste_span{
+    margin-left: 372px;
+    width: 209px;
+
+}
+.talep_turu_liste_span{
+    margin-left: 602px;
+    text-align: center;
+    width: 73px;
+}
+
+.guncelleme_tarihi_liste_span{
+    margin-left: 703px;
+    text-align: center;
+    width: 126px;
+}
+
+.talep_duzenle_link{
+    display: none;
+    font-weight: bold;
+    margin-left: 840px;
+    position: absolute
+}
+
+.talep_sil_link{
+    display: none;
+    font-weight: bold;
+    margin-left: 910px;
+    position: absolute;
+}
+
+.hepsini_listele_talep_navigation_links{
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 783px;
+    margin-top: 20px;
+    
+}
+
+.hepsini_listele_page_previous_link{
+    margin-right: 15px;
+}
+
+.hepsini_listele_page_next_link{
+
+}

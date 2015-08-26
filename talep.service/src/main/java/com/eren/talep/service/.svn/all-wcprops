@@ -1,0 +1,109 @@
+END
+UserService.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repos/!svn/ver/755/trunk/XMode/radiomode.service/src/main/java/com/eren/radiomode/service/UserService.java
+END
+ListenHistoryService.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/!svn/ver/756/trunk/XMode/radiomode.service/src/main/java/com/eren/radiomode/service/ListenHistoryService.java
+END
+RadioCreateService.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/!svn/ver/788/trunk/XMode/radiomode.service/src/main/java/com/eren/radiomode/service/RadioCreateService.java
+END
+LanguageService.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/repos/!svn/ver/729/trunk/XMode/radiomode.service/src/main/java/com/eren/radiomode/service/LanguageService.java
+END
+EmailListService.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repos/!svn/ver/729/trunk/XMode/radiomode.service/src/main/java/com/eren/radiomode/service/EmailListService.java
+END
+MessageService.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repos/!svn/ver/808/trunk/XMode/radiomode.service/src/main/java/com/eren/radiomode/service/MessageService.java
+END
+RadioPlayService.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repos/!svn/ver/729/trunk/XMode/radiomode.service/src/main/java/com/eren/radiomode/service/RadioPlayService.java
+END
+AlbumService.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/!svn/ver/808/trunk/XMode/radiomode.service/src/main/java/com/eren/radiomode/service/AlbumService.java
+END
+UserActivationService.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/!svn/ver/808/trunk/XMode/radiomode.service/src/main/java/com/eren/radiomode/service/UserActivationService.java
+END
+CommentService.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repos/!svn/ver/800/trunk/XMode/radiomode.service/src/main/java/com/eren/radiomode/service/CommentService.java
+END
+FriendListService.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repos/!svn/ver/756/trunk/XMode/radiomode.service/src/main/java/com/eren/radiomode/service/FriendListService.java
+END
+CountryService.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repos/!svn/ver/729/trunk/XMode/radiomode.service/src/main/java/com/eren/radiomode/service/CountryService.java
+END
+SignUpService.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/repos/!svn/ver/808/trunk/XMode/radiomode.service/src/main/java/com/eren/radiomode/service/SignUpService.java
+END
+VideoService.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/!svn/ver/808/trunk/XMode/radiomode.service/src/main/java/com/eren/radiomode/service/VideoService.java
+END
+SongService.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repos/!svn/ver/808/trunk/XMode/radiomode.service/src/main/java/com/eren/radiomode/service/SongService.java
+END
+EditProfileService.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/!svn/ver/729/trunk/XMode/radiomode.service/src/main/java/com/eren/radiomode/service/EditProfileService.java
+END
+ArtistService.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/repos/!svn/ver/808/trunk/XMode/radiomode.service/src/main/java/com/eren/radiomode/service/ArtistService.java
+END
+TagService.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/repos/!svn/ver/808/trunk/XMode/radiomode.service/src/main/java/com/eren/radiomode/service/TagService.java
+END

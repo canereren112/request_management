@@ -1,0 +1,21 @@
+K 26
+svn:wc:ra_dav:activity-url
+V 16
+/repos/!svn/act/
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/repos/!svn/ver/834/trunk/XMode/radiomode.collector
+END
+nbactions.xml
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repos/!svn/ver/834/trunk/XMode/radiomode.collector/nbactions.xml
+END
+pom.xml
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/repos/!svn/ver/834/trunk/XMode/radiomode.collector/pom.xml
+END

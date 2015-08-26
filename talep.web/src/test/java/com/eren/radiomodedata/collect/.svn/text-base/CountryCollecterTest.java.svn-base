@@ -1,0 +1,58 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+package com.eren.radiomodedata.collect;
+
+import com.eren.radiomode.collector.collect.CountryCollector;
+import com.eren.radiomode.dao.CountryDAO;
+import com.eren.radiomodedata.junit.RadioModeJUnitTest;
+
+/**
+ *
+ * @author work
+ */
+public class CountryCollecterTest extends RadioModeJUnitTest {
+    
+    public CountryCollecterTest(String testName) {
+        super(testName);
+    }
+
+    /**
+     * Test of getCountryDAO method, of class CountryCollector.
+     */
+    public void DISABLED_testGetCountryDAO() {
+        System.out.println("getCountryDAO");
+        CountryCollector instance = new CountryCollector();
+        CountryDAO expResult = null;
+        CountryDAO result = instance.getCountryDAO();
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+
+    /**
+     * Test of setCountryDAO method, of class CountryCollector.
+     */
+    public void DISABLED_testSetCountryDAO() {
+        System.out.println("setCountryDAO");
+        CountryDAO countryDAO = null;
+        CountryCollector instance = new CountryCollector();
+        instance.setCountryDAO(countryDAO);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+
+    /**
+     * Test of collectAllCountries method, of class CountryCollector.
+     */
+    public void DISABLED_testCollectAllCountries() {
+        System.out.println("collectAllCountries");
+        CountryCollector instance = (CountryCollector) applicationContext.getBean("countryCollecter");
+        instance.collectAllCountries();
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+
+}

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+       http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
+       http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.0.xsd
+       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+    <aop:aspectj-autoproxy proxy-target-class="true"/>
+    <context:annotation-config />
+
+    <!-- Servis Siniflari -->
+    <bean id="emailCollector" class="com.eren.radiomode.collector.collect.EmailCollector" autowire="byName">
+    </bean>
+    <bean id="emailCollecterViaAPIs" class="com.eren.radiomode.collector.collect.EmailCollecterViaAPIs" autowire="byName" scope="prototype">
+    </bean>
+    <bean id="languageCollector" class="com.eren.radiomode.collector.collect.LanguageCollector" autowire="byName">
+    </bean>
+    <bean id="countryCollector" class="com.eren.radiomode.collector.collect.CountryCollector" autowire="byName">
+    </bean>
+    <bean id="emailCollecterMain" class="com.eren.radiomode.collector.collect.EmailCollecterMain" autowire="byName">
+    </bean>
+    <!--
+    <bean id="artistExample" class="net.roarsoftware.lastfm.myexamples.ArtistExample" autowire="byName">
+    </bean>
+    -->
+    <bean id="artistCollector" class="com.eren.radiomode.collector.collect.ArtistCollector" autowire="byName" scope="prototype">
+    </bean>
+    <bean id="artistCollectorMain" class="com.eren.radiomode.collector.collect.ArtistCollectorMain">
+    </bean>
+    <bean id="imageCollector" class="com.eren.radiomode.collector.collect.ImageCollector" autowire="byName">
+    </bean>
+    <bean id="albumCollector" class="com.eren.radiomode.collector.collect.AlbumCollector" autowire="byName">
+    </bean>
+    <bean id="songCollector" class="com.eren.radiomode.collector.collect.SongCollector" autowire="byName">
+    </bean>
+    <bean id="videoCollector" class="com.eren.radiomode.collector.collect.VideoCollector" autowire="byName" scope="prototype">
+    </bean>
+    <bean id="videoCollectorMain" class="com.eren.radiomode.collector.collect.VideoCollectorMain">
+    </bean>
+    
+    <!-- Servis Siniflari -->
+    <!--
+    <bean id="util" class="com.eren.radiomode.collector.">
+    </bean>
+    -->
+</beans>

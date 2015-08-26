@@ -1,0 +1,93 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package net.roarsoftware.lastfm.myexamples;
+
+import com.eren.radiomode.dao.ArtistDAO;
+import com.eren.radiomode.dao.SongDAO;
+import com.eren.radiomode.domain.artist.Artist;
+import com.eren.radiomode.domain.Country;
+import com.eren.radiomodedata.junit.RadioModeJUnitTest;
+import java.util.Collection;
+import java.util.List;
+import net.roarsoftware.lastfm.ImageSize;
+import net.roarsoftware.lastfm.Track;
+
+/**
+ *
+ * @author work
+ */
+public class ArtistExampleTest extends RadioModeJUnitTest {
+
+    public ArtistExampleTest(String testName) {
+        super(testName);
+    }
+
+    /**
+     * Artist ve SimiliarArtists tablolarini doldurur
+     */
+    public void DISABLED_getSimiliarArtistsFromLastFM() {
+        System.out.println("main");
+        ArtistDAO artistDAO = (ArtistDAO) applicationContext.getBean("artistDAO");
+
+        String key = "b25b959554ed76058ac220b7b2e0a026"; //this is the key used in the last.fm API examples online.
+        Collection<net.roarsoftware.lastfm.Artist> similiarArtists = net.roarsoftware.lastfm.Artist.getSimilar("Teoman", key);
+        System.out.println("Similiar Artists for Placebo:");
+
+        Artist realArtist = artistDAO.getArtistByName("Teoman");
+        for (net.roarsoftware.lastfm.Artist artist : similiarArtists) {
+            artistDAO.saveArtist(artist.getName(), new Country());
+            artistDAO.saveArtistSimliar(realArtist, artistDAO.getArtistByName(artist.getName()), artist.getSimilarityMatch());
+        }
+    }
+
+    /**
+     * Artist ve Song tablolarini doldurur
+     */
+    public void DISABLED_getArtistAndSongsFromLastFM() {
+        System.out.println("main");
+        ArtistDAO artistDAO = (ArtistDAO) applicationContext.getBean("artistDAO");
+        SongDAO songDAO = (SongDAO) applicationContext.getBean("songDAO");
+
+        String key = "b25b959554ed76058ac220b7b2e0a026"; //this is the key used in the last.fm API examples online.
+        Collection<net.roarsoftware.lastfm.Artist> similiarArtists = net.roarsoftware.lastfm.Artist.getSimilar("Teoman", key);
+        System.out.println("Similiar Artists for Placebo:");
+
+        Artist realArtist = realArtist = artistDAO.getArtistByName("Teoman");
+        Collection<Track> topTracks = net.roarsoftware.lastfm.Artist.getTopTracks("Teoman", key);
+        for (Track track : topTracks) {
+            songDAO.saveSong(realArtist, track.getName());
+        }
+
+        for (net.roarsoftware.lastfm.Artist artist : similiarArtists) {
+            topTracks = net.roarsoftware.lastfm.Artist.getTopTracks(artist.getName(), key);
+            for (Track track : topTracks) {
+                songDAO.saveSong(artistDAO.getArtistByName(artist.getName()), track.getName());
+            }
+        }
+
+    }
+
+    /**
+     * Artist Resimlerini last.fm den ceker
+     */
+    public void DISABLED_testgetArtistPicturesFromLastFM() {
+        System.out.println("main");
+        ArtistDAO artistDAO = (ArtistDAO) applicationContext.getBean("artistDAO");
+        SongDAO songDAO = (SongDAO) applicationContext.getBean("songDAO");
+
+        String key = "b25b959554ed76058ac220b7b2e0a026"; //this is the key used in the last.fm API examples online.
+
+
+        List<Artist> realArtists = artistDAO.getAllArtists();
+
+        for (Artist artists : realArtists) {
+            net.roarsoftware.lastfm.Artist artist = net.roarsoftware.lastfm.Artist.getInfo(artists.getName(), key);
+            System.out.println(artist.getImageURL(ImageSize.HUGE));
+        }
+
+    }
+
+
+}

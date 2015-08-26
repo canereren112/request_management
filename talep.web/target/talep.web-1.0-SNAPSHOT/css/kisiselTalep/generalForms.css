@@ -1,0 +1,631 @@
+/* 
+    Document   : editForms
+    Created on : 07.Şub.2012, 21:24:10
+    Author     : caner
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+
+.referans_bilgileri{
+
+    font-size: 19px;
+    font-weight: bold;
+    line-height: 1.4;
+    margin-left: 18px;
+    margin-top: 7px;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6);
+}
+
+.referans_div{
+    border: 1px solid #E4E4E4;
+    height: 163px;
+    margin-top: 25px;
+}
+
+.talep_sahibi_div{
+    border: 1px solid #E4E4E4;
+    height: 360px;
+    margin-top: 25px;
+}
+
+.yardimEdit_talep_sahibi_div{
+    height: 390px;
+}
+
+.ogrenciEdit_talep_sahibi_div{
+    height: 381px;
+}
+
+.referans_ad{
+    float: left;
+    height: 23px;
+    margin-top: 10px;
+    padding-left: 20px;
+    padding-top: 12px;
+    position: absolute;
+}
+
+.referans_ad_input{
+    margin-left: 20px;
+    margin-top: -5px;
+    position: absolute;
+    width: 250px;
+}
+
+.referans_soyad{
+    float: left;
+    height: 23px;
+    margin-left: 316px;
+    margin-top: 10px;
+    padding-left: 20px;
+    padding-top: 12px;
+    position: absolute;
+}
+
+.referans_soyad_input{
+    margin-left: 20px;
+    margin-top: -5px;
+    position: absolute;
+    width: 200px;
+}
+
+
+.referans_telefon{
+    float: left;
+    height: 23px;
+    margin-left: 632px;
+    margin-top: 10px;
+    padding-left: 20px;
+    padding-top: 12px;
+    position: absolute;
+}
+
+.referans_telefon_input{
+    margin-left: 20px;
+    position: absolute;
+    width: 155px;
+    margin-top: -5px;
+}
+
+.referans_not_div{
+    margin-top: 60px;
+    padding-left: 20px;
+}
+.referans_not_textarea{
+    height: 43px;
+    margin-left: 65px;
+    padding: 5px;
+    position: absolute;
+    width: 606px;
+}
+
+.talep_sahibi_bilgileri{
+
+    font-size: 19px;
+    font-weight: bold;
+    line-height: 1.4;
+    margin-left: 18px;
+    margin-top: 7px;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6);
+}
+
+
+.talep_sahibi_ad{
+    float: left;
+    height: 23px;
+    padding-left: 20px;
+    padding-top: 12px;
+    position: absolute;
+    margin-top: 10px;
+}
+
+.talep_sahibi_ad_input{
+    margin-left: 20px;
+    margin-top: -5px;
+    position: absolute;
+    width: 250px;
+}
+
+.talep_sahibi_soyad{
+    float: left;
+    height: 23px;
+    margin-left: 316px;
+    margin-top: 10px;
+    padding-left: 20px;
+    padding-top: 12px;
+    position: absolute;
+}
+
+.talep_sahibi_soyad_input{
+    margin-left: 20px;
+    margin-top: -5px;
+    position: absolute;
+    width: 200px;
+}
+
+.talep_sahibi_tc_kimlik_no{
+    float: left;
+    height: 23px;
+    margin-left: 630px;
+    margin-top: 10px;
+    padding-left: 20px;
+    padding-top: 12px;
+    position: absolute;
+}
+
+.talep_sahibi_tc_kimlik_no_input{
+    margin-left: 20px;
+    position: absolute;
+    width: 155px;
+    margin-top: -5px;
+}
+
+.talep_sahibi_sicil_no{
+    float: left;
+    height: 23px;
+    margin-left: 630px;
+    margin-top: 50px;
+    padding-left: 20px;
+    padding-top: 12px;
+    position: absolute;
+}
+
+.talep_sahibi_sicil_no_input{
+    margin-left: 20px;
+    position: absolute;
+    width: 155px;
+    margin-top: -5px;
+}
+.talep_sahibi_diger_tel{
+    height: 23px;
+    margin-left: 316px;
+    margin-top: 50px;
+    padding-left: 20px;
+    padding-top: 12px;
+}
+
+.talep_sahibi_diger_tel_input{
+    margin-left: 37px;
+    margin-top: -5px;
+    position: absolute;
+    width: 155px;
+}
+
+.talep_sahibi_cep_tel{
+    float: left;
+    height: 23px;
+    margin-top: 50px;
+    padding-left: 20px;
+    padding-top: 12px;
+}
+
+.talep_sahibi_cep_tel_input{
+    margin-left:42px;
+    position: absolute;
+    width: 155px;
+    margin-top: -5px;
+}
+
+.talep_sahibi_gorevi{
+    float: left;
+    height: 23px;
+    margin-top: 12px;
+    padding-left: 20px;
+    padding-top: 12px;
+}
+
+.talep_sahibi_gorevi_input{
+    margin-left: 53px;
+    margin-top: -5px;
+    position: absolute;
+    width: 265px
+}
+
+.talep_sahibi_gorev_yeri{
+    float: left;
+    height: 23px;
+    margin-left: 364px;
+    margin-top: 12px;
+    padding-left: 20px;
+    padding-top: 12px;
+}
+
+.talep_sahibi_gorev_yeri_input{
+    margin-left: 30px;
+    margin-top: -5px;
+    position: absolute;
+    width: 259px;
+}
+
+.talep_sahibi_not_div{
+    margin-top: 64px;
+    padding-left: 20px;
+}
+
+.yardimEdit_talep_sahibi_not_div{
+    margin-top: 46px;
+
+}
+
+.ogrenciEdit_talep_sahibi_not_div{
+    margin-top: 84px;
+}
+
+.talep_sahibi_not_textarea{
+    height: 43px;
+    margin-left: 65px;
+    padding: 5px;
+    position: absolute;
+    width: 606px;
+}
+
+
+.talep_sahibi_ilgili_kurum{
+    float: left;
+    height: 23px;
+    margin-top: 56px;
+    padding-left: 20px;
+    padding-top: 12px;
+}
+
+.talep_sahibi_ilgili_kurum_input{
+    margin-left: 26px;
+    margin-top: -5px;
+    position: absolute;
+    width: 259px;
+}
+
+
+.talep_sahibi_gorusulecek_kisi{
+    float: left;
+    height: 23px;
+    margin-left: 364px;
+    margin-top: 56px;
+    padding-left: 20px;
+    padding-top: 12px;
+}
+
+.talep_sahibi_gorusulecek_kisi_input{
+    margin-left: 30px;
+    margin-top: -5px;
+    position: absolute;
+    width: 259px;
+}
+
+
+.talep_sahibi_gorusulecek_kisi_tel{
+    float: left;
+    height: 23px;
+    margin-top: 106px;
+    padding-left: 20px;
+    padding-top: 12px;
+    position: absolute;
+}
+
+.talep_sahibi_gorusulecek_kisi_tel_input{
+    margin-left: 49px;
+    position: absolute;
+    width: 155px;
+    margin-top: -5px;
+}
+
+
+.talep_sahibi_gorusulecek_kisi_cep_tel{
+    float: left;
+    height: 23px;
+    margin-left: 593px;
+    margin-top: 106px;
+    padding-left: 20px;
+    padding-top: 12px;
+    position: absolute;
+}
+
+.talep_sahibi_gorusulecek_kisi_cep_tel_input{
+    margin-left:42px;
+    position: absolute;
+    width: 155px;
+    margin-top: -5px;
+}
+
+
+.talep_sahibi_gorusulecek_kisi_fax{
+    float: left;
+    height: 23px;
+    margin-left: 300px;
+    margin-top: 106px;
+    padding-left: 20px;
+    padding-top: 12px;
+    position: absolute
+}
+
+.talep_sahibi_gorusulecek_kisi_fax_input{
+    margin-left:42px;
+    position: absolute;
+    width: 155px;
+    margin-top: -5px;
+}
+
+.yapilan_islemler{
+
+    font-size: 19px;
+    font-weight: bold;
+    line-height: 1.4;
+    margin-left: 18px;
+    margin-top: 7px;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6);
+}
+
+.islemler_div{
+    border: 1px solid #E4E4E4;
+    height: 119px;
+    margin-top: 25px;
+}
+
+.yapilan_islemler_icerik{
+    float: left;
+    height: 23px;
+    margin-left: 0;
+    margin-top: 10px;
+    padding-left: 20px;
+    padding-top: 12px;
+    position: absolute;
+}
+
+.yapilan_islemler_icerik_input{
+    margin-left: 42px;
+    margin-top: -3px;
+    position: absolute;
+    width: 500px;
+    height: 43px;
+}
+
+.yapilan_islemler_tarih{
+    float: left;
+    height: 23px;
+    margin-left: 718px;
+    margin-top: 10px;
+    padding-left: 20px;
+    padding-top: 12px;
+    position: absolute
+}
+
+.yapilan_islemler_tarih_input{
+    margin-left: 42px;
+    margin-top: -3px;
+    position: absolute;
+    width: 120px;
+}
+
+#islemsiz_kayit
+{
+    color: #1C4257;
+    font-size: 14px;
+    font-weight: bold;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6);   
+    margin-left: 419px;
+
+}
+
+#normal_kayit{
+    color: #1C4257;
+    font-size: 14px;
+    font-weight: bold;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6);   
+    margin-left: 448px;
+}
+
+#talep_duzenle{
+    color: #1C4257;
+    font-size: 14px;
+    font-weight: bold;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6);   
+    margin-left: 448px;
+}
+
+.onceki_yapilan_islemler{
+
+    font-size: 19px;
+    font-weight: bold;
+    line-height: 1.4;
+    margin-top: 20px;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6);
+}
+
+.onceki_yapilan_islemler_header{
+    border: 1px solid #CCCCCC;
+    height: 30px;
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.onceki_yapilan_islemler_div{
+    height: 240px;
+    border: 1px solid #E4E4E4;
+    border-top: none;
+}
+
+.onceki_yapilan_islemler_islem_no{
+    margin-top: 5px;
+    position: absolute;
+}
+
+.onceki_yapilan_islemler_yapilan_islem{
+    margin-left: 100px;
+    margin-top: 5px;
+    position: absolute;
+}
+
+.onceki_yapilan_islemler_tarih{
+    margin-top: 5px;
+    position: absolute;
+    margin-left: 867px;
+}
+
+
+.talep_sahibi_sertifikalar{
+    float: left;
+    height: 23px;
+    margin-left: 83px;
+    margin-top: 12px;
+    padding-left: 20px;
+    padding-top: 12px;
+}
+
+.talep_sahibi_egitim_durumu{
+    float: left;
+    height: 23px;
+    margin-top: 12px;
+    padding-left: 20px;
+    padding-top: 12px;
+}
+
+.talep_sahibi_egitim_durumu_input{
+    margin-left: 32px;
+    width: 195px;
+}
+
+.talep_sahibi_sertifikalar_input{
+    margin-left: 26px;
+    width: 349px;
+}
+
+.talep_sahibi_evrak_tarih_sayisi{
+    float: left;
+    height: 23px;
+    margin-left: 364px;
+    margin-top: 12px;
+    padding-left: 20px;
+    padding-top: 12px;
+
+}
+
+.talep_sahibi_evrak_tarih_sayisi_input{
+    margin-left: 30px;
+    margin-top: -5px;
+    position: absolute;
+    width: 259px;
+}
+
+.talep_sahibi_adres{
+
+    height: 23px;
+    margin-top: 12px;
+    padding-left: 20px;
+    padding-top: 12px;
+}
+
+.talep_sahibi_adres_input{
+    height: 50px;
+    margin-left: 53px;
+    margin-top: -5px;
+    position: absolute;
+    width: 400px;
+}
+
+
+.ogrenciEdit_talep_sahibi_adres{
+    float: left;
+    height: 23px;
+    margin-left: 364px;
+    margin-top: 12px;
+    padding-left: 20px;
+    padding-top: 12px;
+
+}
+
+.ogrenciEdit_talep_sahibi_adres_input{
+    height: 43px;
+    margin-left: 30px;
+    margin-top: -5px;
+    position: absolute;
+    width: 400px;
+}
+
+.tayinDivHeight{
+    display: none;
+}
+.digerDivHeight{
+    display: none;
+}
+.kurumDivHeight{
+    display: none;
+}
+.ogrenciDivHeight{
+    display: none;
+}
+.sinavDivHeight{
+    display: none;
+}
+.yardimDivHeight{
+    display: none;
+}
+.isDivHeight{
+    display: none;
+}
+
+
+.onceki_yapilan_islemler_list{
+
+}
+
+.onceki_yapilan_islemler_list li{
+    border-bottom: 1px solid #E1E1E1;
+    border-top: 1px solid #FFFFFF;
+    height: 28px;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.onceki_yapilan_islemler_list_item_1{
+    border-top: none;
+}
+
+.onceki_yapilan_islemler_list_islem_no{
+    position: absolute;
+    text-align: center;
+    width: 60px;
+}
+
+.onceki_yapilan_islemler_list_yapilan_islem{
+    color: #555555;
+    font-size: 13px;
+    font-weight: normal;
+    margin-left: 100px;
+    margin-top: 2px;
+    position: absolute;
+    width: 700px;
+}
+
+.onceki_yapilan_islemler_list_tarih{
+    position: absolute;
+    margin-left: 853px;
+}
+
+#onceki_yapilan_islemler{
+    margin-left: 400px;
+    color: #1C4257;
+    font-size: 14px;
+    font-weight: bold;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6);   
+}
+
+.talep_navigation_links{
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 783px;
+    margin-top: 214px;
+    position: absolute;
+}
+
+.page_previous_link{
+    margin-right: 15px;
+}
+
+.page_next_link{
+
+}

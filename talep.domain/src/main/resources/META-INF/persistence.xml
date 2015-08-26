@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="1.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd">
+  <persistence-unit name="com.eren.radiomode_radiomode.domain_jar_1.0-SNAPSHOTPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.hibernate.ejb.HibernatePersistence</provider>
+    <class>com.eren.talep.domain.Talep</class>
+    <class>com.eren.talep.domain.TalepSahibi</class>
+    <class>com.eren.talep.domain.GenelTalep</class>
+    <class>com.eren.talep.domain.Referans</class>
+    <class>com.eren.talep.domain.User</class>
+    <class>com.eren.talep.domain.YapilaniSlem</class>
+    <properties>
+      <property name="hibernate.connection.username" value=""/>
+      <property name="hibernate.connection.driver_class" value=""/>
+      <property name="hibernate.connection.password" value=""/>
+      <property name="hibernate.connection.url" value=""/>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://192.168.2.5:3306/talep_yonetim    "/>
+      <property name="javax.persistence.jdbc.password" value="1903"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+    </properties>
+  </persistence-unit>
+</persistence>

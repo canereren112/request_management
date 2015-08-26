@@ -1,0 +1,175 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package com.eren.radiomodedata.collect;
+
+import com.eren.radiomode.collector.collect.EmailCollector;
+import com.eren.radiomodedata.junit.RadioModeJUnitTest;
+import com.eren.radiomode.collector.util.Constants;
+import com.eren.radiomode.domain.EmailList;
+import com.eren.radiomodedata.website.GoogleParam;
+import java.net.URL;
+
+/**
+ * eski
+ * @author work
+ */
+public class EmailCollecterTest extends RadioModeJUnitTest {
+
+    public EmailCollecterTest(String testName) {
+        super(testName);
+    }
+
+    /**
+     * Test of collectEmailAddresses method, of class EmailCollector.
+     */
+    public void DISABLED_testCollectEmailAddresses() {
+        System.out.println("collectEmailAddresses");
+        //EmailCollector.collectEmailAddresses();
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+
+    /**
+     * Test of searchViaGoogle method, of class EmailCollector.
+     */
+    public void DISABLED_testSearchViaGoogle() {
+        System.out.println("searchViaGoogle");
+        String urlStr = "http://www.google.com.tr/search";
+        EmailCollector collecter = (EmailCollector) applicationContext.getBean("emailCollecter");
+        GoogleParam googleParam = new GoogleParam();
+
+        googleParam.setAs_q("*");
+        int num = Integer.parseInt(googleParam.getNum());
+        int count = 1000 / num;
+        URL url = null;
+
+        // Son kullanilan parametreleri al
+        String fileTypeP = "", tbsP = "", occtP = "", startP = "";
+        String lastUsedURL = collecter.getLastUsedUrl();
+        if(lastUsedURL == null) {
+            googleParam.setHl("en");
+            googleParam.setAs_epq("\"" + "deneme" + "\"");
+        } else {
+            fileTypeP = lastUsedURL.substring(lastUsedURL.indexOf("=", lastUsedURL.indexOf("as_filetype")) + 1,
+                    lastUsedURL.indexOf("&", lastUsedURL.indexOf("as_filetype")));
+            tbsP = lastUsedURL.substring(lastUsedURL.indexOf("=", lastUsedURL.indexOf("tbs")) + 1,
+                    lastUsedURL.indexOf("&", lastUsedURL.indexOf("tbs")));
+            occtP = lastUsedURL.substring(lastUsedURL.indexOf("=", lastUsedURL.indexOf("occt")) + 1,
+                    lastUsedURL.indexOf("&", lastUsedURL.indexOf("occt")));
+            startP = lastUsedURL.substring(lastUsedURL.indexOf("=", lastUsedURL.indexOf("num")) + 1,
+                    lastUsedURL.indexOf("&", lastUsedURL.indexOf("num")));
+        }
+
+        boolean isFileType = true, isOcct = true, isTbs = true, isStart = true;
+
+        for(GoogleParam.AsFileType asFileType : GoogleParam.AsFileType.values()) {
+            if(lastUsedURL != null && isFileType == true && !fileTypeP.equals(asFileType.name())) {
+                isFileType = false;
+                continue;
+            }
+            for(GoogleParam.AsOcct asOcct : GoogleParam.AsOcct.values()) {
+                if(lastUsedURL != null && isOcct == true && !occtP.equals(asOcct.name())) {
+                    isOcct = false;
+                    continue;
+                }
+
+                googleParam.setAs_filetype(asFileType.name());
+                googleParam.setAs_occt(asOcct.name());
+                for(int i = 0; i < count; i++) {
+                    int start = Integer.parseInt(googleParam.getStart()) + num;
+
+                    if(lastUsedURL != null && isStart == true && !startP.equals(String.valueOf(start))) {
+                        isStart = false;
+                        continue;
+                    }
+
+                    googleParam.setStart(String.valueOf(start));
+                    url = collecter.createFullURL(urlStr, googleParam);
+                    String htmlStr = collecter.searchViaGoogle(urlStr, url);
+
+                    if(htmlStr.indexOf(Constants.GOOGLE_ERROR1) != -1) {
+                        System.out.println(Constants.GOOGLE_ERROR1);
+                        break;
+                    }
+                    if(htmlStr.indexOf(Constants.GOOGLE_NOT_FOUND) != -1) {
+                        System.out.println(Constants.GOOGLE_NOT_FOUND);
+                    }
+                    collecter.collectEmailAddresses(htmlStr, url.toString(), EmailList.DomainAddress.HOTMAIL.getDescription());
+                    System.out.print(htmlStr);
+                }
+            }
+        }
+
+        for(GoogleParam.Tbs tbs : GoogleParam.Tbs.values()) {
+            if(lastUsedURL != null && isTbs == true && !tbsP.equals(tbs.name())) {
+                isTbs = false;
+                continue;
+            }
+            for(GoogleParam.AsOcct asOcct : GoogleParam.AsOcct.values()) {
+                if(lastUsedURL != null && isOcct == true && !occtP.equals(asOcct.name())) {
+                    isOcct = false;
+                    continue;
+                }
+
+                googleParam.setTbs(tbs.getDescription());
+                googleParam.setAs_occt(asOcct.name());
+                for(int i = 0; i < count; i++) {
+                    int start = Integer.parseInt(googleParam.getStart()) + num;
+
+                    if(lastUsedURL != null && isStart == true && !startP.equals(String.valueOf(start))) {
+                        isStart = false;
+                        continue;
+                    }
+
+                    googleParam.setStart(String.valueOf(start));
+                    url = collecter.createFullURL(urlStr, googleParam);
+                    String htmlStr = collecter.searchViaGoogle(urlStr, url);
+
+                    if(htmlStr.indexOf(Constants.GOOGLE_ERROR1) != -1) {
+                        System.out.println(Constants.GOOGLE_ERROR1);
+                        break;
+                    }
+                    if(htmlStr.indexOf(Constants.GOOGLE_NOT_FOUND) != -1) {
+                        System.out.println(Constants.GOOGLE_NOT_FOUND);
+                    }
+                    collecter.collectEmailAddresses(htmlStr, url.toString(), EmailList.DomainAddress.HOTMAIL.getDescription());
+                    System.out.print(htmlStr);
+                }
+            }
+        }
+        // TODO review the generated test code and remove the default call to fail.
+    }
+
+    /*
+    public void DISABLED_testGoogleAJAXSearchAPI() throws MalformedURLException, IOException, JSONException {
+    URL url = new URL("http://ajax.googleapis.com/ajax/services/search/web?v=1.0&q=@hotmail.com");
+    URLConnection connection = url.openConnection();
+    connection.addRequestProperty("Referer", "http://www.radiomode.com");
+
+    String line;
+    StringBuilder builder = new StringBuilder();
+    BufferedReader reader = new BufferedReader(new InputStreamReader(connection.getInputStream()));
+    while((line = reader.readLine()) != null) {
+    builder.append(line);
+    }
+
+    JSONObject json = new JSONObject(builder.toString());
+
+    System.out.println("Total results = " +
+    json.getJSONObject("responseData").getJSONObject("cursor").getString("estimatedResultCount"));
+
+    JSONArray ja = json.getJSONObject("responseData").getJSONArray("results");
+
+    System.out.println(" Results:");
+    for(int i = 0; i < ja.length(); i++) {
+    System.out.print((i + 1) + ". ");
+    JSONObject j = ja.getJSONObject(i);
+    System.out.println(j.getString("titleNoFormatting"));
+    System.out.println(j.getString("url"));
+    }
+
+    }
+     */    
+}

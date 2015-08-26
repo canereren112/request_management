@@ -1,0 +1,76 @@
+/* 
+    Document   : login
+    Created on : 31.Oca.2012, 02:57:50
+    Author     : caner
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+.login_islem_sec_div{
+    padding-top: 20px;
+}
+
+
+.login_button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    color: #1C4257;
+    font-size: 14px;
+    font-weight: bold;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6);
+}
+
+#tayin_atama_butonu{
+    color: #1C4257;
+    font-size: 14px;
+    font-weight: bold;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6);
+}
+
+#is_talebi_butonu{
+    color: #1C4257;
+    font-size: 14px;
+    font-weight: bold;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6);
+}
+
+#kurum_is_takibi_butonu{
+    color: #1C4257;
+    font-size: 14px;
+    font-weight: bold;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6);
+}
+
+#yardim_talebi_butonu{
+    color: #1C4257;
+    font-size: 14px;
+    font-weight: bold;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6);
+}
+
+#sinav_mulakat_butonu{
+    color: #1C4257;
+    font-size: 14px;
+    font-weight: bold;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6);
+}
+
+#ogrenci_butonu{
+    color: #1C4257;
+    font-size: 14px;
+    font-weight: bold;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6);
+}
+
+#diger_talep_butonu{
+    color: #1C4257;
+    font-size: 14px;
+    font-weight: bold;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6);
+}

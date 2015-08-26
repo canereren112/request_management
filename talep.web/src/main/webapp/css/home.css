@@ -1,0 +1,91 @@
+.login_div{
+    border: 1px solid #E4E4E4;
+    height: 170px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 43px;
+    width: 500px;
+}
+
+.login_bilgileri{
+    color: #1C4257;
+    font-size: 23px;
+    font-weight: bold;
+    line-height: 1.4;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 22px;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6);
+    width: 260px;
+}
+
+.login_kullanici_adi{
+    float: left;
+    height: 23px;
+    margin-top: 30px;
+    padding-left: 81px;
+    padding-top: 12px;
+    position: absolute;
+}
+
+
+
+.login_kullanici_adi_input{
+    margin-left: 5px;
+
+    position: absolute;
+    width: 155px;
+}
+
+.login_kullanici_adi_span{
+
+
+    margin-left: 20px;
+}
+
+
+.login_password{
+    float: left;
+    height: 23px;
+    margin-left: 12px;
+    margin-top: 83px;
+    padding-left: 70px;
+    padding-top: 12px;
+    position: absolute;
+}
+
+.login_password_input{
+
+    margin-left: 5px;
+    margin-top: -3px;
+    position: absolute;
+    width: 125px;
+}
+
+.login_password_span{
+    margin-left: 61px;
+}
+
+
+#kullanici_girisi
+{
+    color: #1C4257;
+    font-size: 14px;
+    font-weight: bold;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6);   
+    margin-left: 419px;
+    width: 79px;
+}
+
+
+.login_button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    color: #1C4257;
+    font-size: 14px;
+    font-weight: bold;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6);
+}
+

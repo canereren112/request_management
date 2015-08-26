@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context antiJARLocking="true" path="/talep.web">
+  <Resource auth="Container" driverClassName="com.mysql.jdbc.Driver" maxActive="100" maxIdle="30" maxWait="10000" name="jdbc/RadioMode" password="radiom47" removeAbandoned="true" removeAbandonedTimeout="30" type="javax.sql.DataSource" url="jdbc:mysql://192.168.2.5/test_radiomode" username="radiomode"/>
+  <!--<Resource auth="Container" driverClassName="com.mysql.jdbc.Driver" maxActive="100" maxIdle="30" maxWait="10000" name="jdbc/RadioMode" password="broken47" removeAbandoned="true" removeAbandonedTimeout="30" type="javax.sql.DataSource" url="jdbc:mysql://localhost/test_radiomode" username="root"/>-->
+</Context>

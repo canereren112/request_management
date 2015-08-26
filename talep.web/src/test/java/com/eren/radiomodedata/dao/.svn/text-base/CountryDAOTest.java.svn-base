@@ -1,0 +1,87 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package com.eren.radiomodedata.dao;
+
+import com.eren.radiomode.dao.CountryDAO;
+import com.eren.radiomode.dao.impl.CountryDAOImpl;
+import com.eren.radiomode.domain.Country;
+import com.eren.radiomodedata.junit.RadioModeJUnitTest;
+import java.util.List;
+import java.util.Locale;
+
+/**
+ *
+ * @author work
+ */
+public class CountryDAOTest extends RadioModeJUnitTest {
+
+    public CountryDAOTest(String testName) {
+        super(testName);
+    }
+
+    /**
+     * Test of findByCountryCode method, of class CountryDAO.
+     */
+    public void DISABLED_testFindByCountryCode() {
+        System.out.println("findByCountryCode");
+        String countryCode = "";
+        CountryDAOImpl instance = new CountryDAOImpl();
+        Country expResult = null;
+        Country result = instance.getCountryByCountryCode(countryCode);
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+
+    /**
+     * Test of findByDisplayLangCode method, of class CountryDAO.
+     */
+    public void DISABLED_testFindByDisplayLangCode() {
+        System.out.println("findByDisplayLangCode");
+        String displayLangCode = "ko";
+        CountryDAO instance = (CountryDAO) applicationContext.getBean("countryDAO");
+        List expResult = null;
+        List<Country> result = instance.getCountryByDisplayLangCode(displayLangCode);
+
+        Locale locale = new Locale("ko", "KR");
+        for (int i = 0; i < result.size(); i++) {
+            System.out.format(locale, result.get(i).getCountryCode() + " : " + result.get(i).getCountry());
+            System.out.println();
+        }
+
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+
+    /**
+     * Test of addCountry method, of class CountryDAO.
+     */
+    public void DISABLED_testAddCountry() {
+        System.out.println("addCountry");
+        String countryCode = "";
+        String displayCountryCode = "";
+        String countryName = "";
+        CountryDAOImpl instance = new CountryDAOImpl();
+        boolean expResult = false;
+        //boolean result = instance.addCountry(countryCode, displayCountryCode, countryName);
+        //assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+
+    /**
+     * Test of getAllCountryCodes method, of class CountryDAO.
+     */
+    public void DISABLED_testGetAllCountryCodes() {
+        System.out.println("getAllCountryCodes");
+        CountryDAOImpl instance = new CountryDAOImpl();
+        List expResult = null;
+        List result = instance.getAllCountryCodes();
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+}

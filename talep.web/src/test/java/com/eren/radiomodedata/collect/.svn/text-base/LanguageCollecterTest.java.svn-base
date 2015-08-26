@@ -1,0 +1,56 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package com.eren.radiomodedata.collect;
+
+import com.eren.radiomode.collector.collect.LanguageCollector;
+import com.eren.radiomode.dao.LanguageDAO;
+import com.eren.radiomodedata.junit.RadioModeJUnitTest;
+
+/**
+ *
+ * @author work
+ */
+public class LanguageCollecterTest extends RadioModeJUnitTest {
+
+    public LanguageCollecterTest(String testName) {
+        super(testName);
+    }
+
+    /**
+     * Test of getLanguageDAO method, of class LanguageCollector.
+     */
+    public void DISABLED_testGetLanguageDAO() {
+        System.out.println("getLanguageDAO");
+        LanguageCollector instance = new LanguageCollector();
+        LanguageDAO expResult = null;
+        LanguageDAO result = instance.getLanguageDAO();
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+
+    /**
+     * Test of setLanguageDAO method, of class LanguageCollector.
+     */
+    public void DISABLED_testSetLanguageDAO() {
+        System.out.println("setLanguageDAO");
+        LanguageDAO languageDAO = null;
+        LanguageCollector instance = new LanguageCollector();
+        instance.setLanguageDAO(languageDAO);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+
+    /**
+     * Test of collectAllLanguages method, of class LanguageCollector.
+     */
+    public void DISABLED_testCollectAllLanguages() {
+        System.out.println("collectAllLanguages");
+        LanguageCollector instance = (LanguageCollector) applicationContext.getBean("languageCollecter");
+        instance.collectAllLanguages();
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+}

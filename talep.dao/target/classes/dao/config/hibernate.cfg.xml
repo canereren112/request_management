@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <!-- Baglanti degiskenleri -->
+    <!--
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://192.168.2.5:3306/test_radiomode</property>
+        <property name="hibernate.connection.username">radiomode</property>
+        <property name="hibernate.connection.password">radiom47</property>
+    -->
+    <!-- Baglanti degiskenleri -->
+    <!-- Ekstra ayarlar -->
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQLInnoDBDialect</property>
+    <property name="cache.provider_class">org.hibernate.cache.NoCacheProvider</property>
+    <property name="hibernate.transaction.factory_class">org.springframework.orm.hibernate3.SpringTransactionFactory</property>
+    <!--<property name="hibernate.transaction.factory_class">org.hibernate.transaction.JDBCTransactionFactory</property>-->
+    <property name="hibernate.current_session_context_class">thread</property>
+    <property name="hibernate.jdbc.use_get_generated_keys">true</property>
+    <property name="hibernate.show_sql">true</property>
+    <property name="hibernate.connection.zeroDateTimeBehavior">convertToNull</property>
+    <property name="hibernate.hbm2ddl.auto">false</property>
+    <!--
+        <property name="hibernate.bytecode.use_reflection_optimizer">false</property>
+        -->
+    <!-- Ekstra ayarlar -->
+    <!-- Pojo Siniflari -->
+    <mapping class="com.eren.talep.domain.GenelTalep"/>
+    <mapping class="com.eren.talep.domain.Referans"/>
+    <mapping class="com.eren.talep.domain.Talep"/>
+    <mapping class="com.eren.talep.domain.TalepSahibi"/>
+    <mapping class="com.eren.talep.domain.YapilaniSlem"/>
+    <mapping class="com.eren.talep.domain.User"/>
+    <!-- Pojo Siniflari -->
+  </session-factory>
+</hibernate-configuration>

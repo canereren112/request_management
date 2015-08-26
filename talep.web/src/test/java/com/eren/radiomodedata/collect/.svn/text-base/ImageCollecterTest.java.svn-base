@@ -1,0 +1,35 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+package com.eren.radiomodedata.collect;
+
+import com.eren.radiomode.collector.collect.ImageCollector;
+import com.eren.radiomodedata.junit.RadioModeJUnitTest;
+import java.io.UnsupportedEncodingException;
+
+/**
+ *
+ * @author work
+ */
+public class ImageCollecterTest extends RadioModeJUnitTest {
+    
+    public ImageCollecterTest(String testName) {
+        super(testName);
+    }
+
+    /**
+     * Test of collectArtistPictures method, of class ImageCollector.
+     */
+    public void DISABLED_testCollectArtistPictures() throws UnsupportedEncodingException {
+        System.out.println("collectArtistPictures");
+        String url = "Şebnem Ferah";        
+
+        ImageCollector instance = (ImageCollector) applicationContext.getBean("imageCollecter");
+        instance.collectArtistPictures();
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+
+}

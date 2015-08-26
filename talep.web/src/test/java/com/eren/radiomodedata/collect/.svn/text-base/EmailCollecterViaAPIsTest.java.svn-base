@@ -1,0 +1,90 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package com.eren.radiomodedata.collect;
+
+import com.eren.radiomode.collector.collect.EmailCollecterViaAPIs;
+import com.eren.radiomode.dao.CountryDAO;
+import com.eren.radiomode.dao.EmailListDAO;
+import com.eren.radiomodedata.junit.RadioModeJUnitTest;
+
+/**
+ *
+ * @author work
+ */
+public class EmailCollecterViaAPIsTest extends RadioModeJUnitTest {
+
+    public EmailCollecterViaAPIsTest(String testName) {
+        super(testName);
+    }
+
+    /**
+     * Test of getCountryDAO method, of class EmailCollecterViaAPIs.
+     */
+    public void DISABLED_testGetCountryDAO() {
+        System.out.println("getCountryDAO");
+        EmailCollecterViaAPIs instance = new EmailCollecterViaAPIs();
+        CountryDAO expResult = null;
+        CountryDAO result = instance.getCountryDAO();
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+
+    /**
+     * Test of setCountryDAO method, of class EmailCollecterViaAPIs.
+     */
+    public void DISABLED_testSetCountryDAO() {
+        System.out.println("setCountryDAO");
+        CountryDAO countryDAO = null;
+        EmailCollecterViaAPIs instance = new EmailCollecterViaAPIs();
+        instance.setCountryDAO(countryDAO);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+
+    /**
+     * Test of getListDAO method, of class EmailCollecterViaAPIs.
+     */
+    public void DISABLED_testGetListDAO() {
+        System.out.println("getListDAO");
+        EmailCollecterViaAPIs instance = new EmailCollecterViaAPIs();
+        EmailListDAO expResult = null;
+        EmailListDAO result = instance.getListDAO();
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+
+    /**
+     * Test of setListDAO method, of class EmailCollecterViaAPIs.
+     */
+    public void DISABLED_testSetListDAO() {
+        System.out.println("setListDAO");
+        EmailListDAO listDAO = null;
+        EmailCollecterViaAPIs instance = new EmailCollecterViaAPIs();
+        instance.setListDAO(listDAO);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+
+    /**
+     * Test of collectEmailAddresses method, of class EmailCollecterViaAPIs.
+     */
+    public void DISABLED_testCollectEmailAddresses() {
+        System.out.println("collectEmailAddresses");
+        String htmlStr = "";
+        String url = "";
+        String domainAddress = "";
+        EmailCollecterViaAPIs instance = new EmailCollecterViaAPIs();
+        //instance.collectEmailAddresses(htmlStr, url, domainAddress);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+
+    public void DISABLED_testMainGoogleSearch() {
+        EmailCollecterViaAPIs collecter = (EmailCollecterViaAPIs) applicationContext.getBean("emailCollecterViaAPIs");
+        //collecter.mainGoogleSearch();
+    }
+}
